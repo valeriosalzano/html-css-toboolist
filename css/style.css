@@ -36,5 +36,22 @@ main .container{
 
 nav{
     border-bottom: 3px solid #F6F8F9;
+    padding:15px 50px 10px;
 }
 
+.button{
+    font-size: 16px;
+    margin: 5px;
+    padding:8px 16px;
+    border: none;
+    border-radius: 8px;
+}
+
+#add-task{
+    background-color: #37A7FA;
+}
+
+#add-section{
+    background-color: white;
+    border: 1px solid lightgray;
+}
