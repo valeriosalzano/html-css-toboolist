@@ -101,5 +101,41 @@ section .checklist{
     content: '\2715';
     color: #FA2200;
     border-color: #FA2200;
-    
+}
+
+.list-element .title{
+    margin-left: 5px;
+}
+
+.label::after{
+    display: inline-block;
+    padding:5px 10px;
+    border-radius: 20px;
+    font-size: 10px;
+    color: white;
+}
+
+.label.editorial::after{
+    content: 'Editorial';
+    background-color: #32A4E6;
+}
+.label.q1_goals::after{
+    content: 'Q1 Goals';
+    background-color: #AB5CE6;
+}
+.label.recruiting::after{
+    content: 'Recruiting';
+    background-color: #2CC6AB;
+}
+.label.mobile::after{
+    content: 'Mobile';
+    background-color: #FA9B00;
+}
+.label.website::after{
+    content: 'Website';
+    background-color: #EC4A9D;
+}
+.label.sales::after{
+    content: 'Sales';
+    background-color: #A3D114;
 }
