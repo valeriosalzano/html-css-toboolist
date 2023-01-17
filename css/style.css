@@ -24,7 +24,7 @@ header .container{
 }
 
 #logo-text{
-    font-weight: 800;
+    font-weight: 900;
     font-size: 40px;
 }
 
@@ -36,11 +36,10 @@ main .container{
 
 nav{
     border-bottom: 3px solid #F6F8F9;
-    padding:15px 50px 10px;
+    padding:10px 50px 10px;
 }
 
 .button{
-    font-size: 16px;
     margin: 5px;
     padding:8px 16px;
     border: none;
@@ -54,4 +53,53 @@ nav{
 #add-section{
     background-color: white;
     border: 1px solid lightgray;
+}
+
+.categories-container{
+    margin:30px 50px;
+    padding-bottom:1px;
+}
+
+.categories-container section{
+    margin-bottom:40px;
+}
+
+.categories-title{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.categories-title .check-mark::before{
+    content: '\2714';
+}
+
+section .checklist{
+    margin-bottom:20px;
+}
+
+.list-element{
+    margin-bottom:10px;
+}
+
+.checklist .mark::before{
+    display:inline-block;
+    text-align: center;
+    width:16px;
+    height:16px;
+    font-size: 12px;
+    border-radius: 50%;
+    border: 1px solid;
+}
+.checked.mark::before{
+    content: '\2713';
+    color: #2BC0A6;
+    border-color: #2BC0A6;
+}
+
+.unchecked.mark::before{
+    content: '\2715';
+    color: #FA2200;
+    border-color: #FA2200;
+    
 }
