@@ -10,6 +10,7 @@ body{
 }
 header{
     background-color: white;
+    padding: 10px;
 }
 
 header .container{
@@ -138,4 +139,8 @@ section .checklist{
 .label.sales::after{
     content: 'Sales';
     background-color: #A3D114;
+}
+.label.boolean::after{
+    content: '\2665';
+    background-color: red;
 }
