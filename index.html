@@ -12,98 +12,99 @@
 
     <body>
         <header>
-            <div class="container">
-                <img class="logo" src="./img/Logo.png" alt="Logo Boolean"/>
-                <span class="logo" id="logo-text">Toboolist</span>    
+            <div class="header-container">
+                <img id="logo-img" src="./img/Logo.png" alt="Logo Boolean"/>
+                <span id="logo-text">Toboolist</span>    
             </div>
         </header>
         
         <main>
             <div class="container">
                 
-                <nav class="buttons">
+                <!-- buttons -->
+                <div class="buttons-container">
                     <button class="button" id="add-task">Add Task</button>
                     <button class="button" id="add-section">Add Section</button>
-                </nav>
-
-                <div class="categories-container">
-                    <section class="new-task">
-                        <div class="categories-title">
-                            <span class="check-mark"></span> New Task
-                        </div>
-                        <div class="checklist">
-                            <div class="list-element">
-                                <span class="checked mark"></span>
-                                <span class="title">Quarterly Newsletter</span>
-                                <span class="label editorial"></span>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="today">
-                        <div class="categories-title">
-                            <span class="check-mark"></span> Today
-                        </div>
-                        <div class="checklist">
-                            <div class="list-element">
-                                <span class="checked mark"></span>
-                                <span class="title">Recruiting blog post</span>
-                                <span class="label editorial"></span>
-                            </div>
-                            <div class="list-element">
-                                <span class="checked mark"></span>
-                                <span class="title">Mobile app launch</span>
-                                <span class="label q1_goals"></span>
-                            </div>
-                            <div class="list-element">
-                                <span class="unchecked mark"></span>
-                                <span class="title">Interview John H.</span>
-                                <span class="label recruiting"></span>
-                            </div>
-                            <div class="list-element">
-                                <span class="checked mark"></span>
-                                <span class="title">Summit update to mobile storefronts</span>
-                                <span class="label mobile"></span>
-                            </div>
-                            <div class="list-element">
-                                <span class="checked mark"></span>
-                                <span class="title">Do the Toboolist</span>
-                                <span class="label boolean"></span>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="upcoming">
-                        <div class="categories-title">
-                            <span class="check-mark"></span> Upcoming
-                        </div>
-                        <div class="checklist">
-                            <div class="list-element">
-                                <span class="unchecked mark"></span>
-                                <span class="title">Schedule meeting with Alex</span>
-                                <span class="no-label"></span>
-                            </div>
-                            <div class="list-element">
-                                <span class="checked mark"></span>
-                                <span class="title">Homepage refresh</span>
-                                <span class="label website"></span>
-                            </div>
-                            <div class="list-element">
-                                <span class="checked mark"></span>
-                                <span class="title">Onboard new Sales team members</span>
-                                <span class="label sales"></span>
-                            </div>
-                            <div class="list-element">
-                                <span class="checked mark"></span>
-                                <span class="title">Review editorial calendar</span>
-                                <span class="label editorial"></span>
-                            </div>
-                        </div>
-                    </section>
                 </div>
 
-            </div>
+                <div class="checklist-container">
+                    <ul class="checklist">
+                        <!-- new task -->
+                        <li class="new-task">
+                            <span class="check-mark"></span>
+                            <h2 class="category-title">New Task</h2>
+                            <ul>
+                                <li>
+                                    <span class="checked mark"></span>
+                                    <span class="li-title">Quarterly Newsletter</span>
+                                    <span class="label editorial"></span>    
+                                </li>
+                            </ul>
+                        </li>
 
+                        <!-- today -->
+                        <li class="today">
+                            <span class="check-mark"></span>
+                            <h2 class="category-title">Today</h2>
+                            <ul>
+                                <li>
+                                    <span class="checked mark"></span>
+                                    <span class="li-title">Recruiting blog post</span>
+                                    <span class="label editorial"></span>    
+                                </li>
+                                <li>
+                                    <span class="checked mark"></span>
+                                    <span class="li-title">Mobile app launch</span>
+                                    <span class="label q1_goals"></span>    
+                                </li>
+                                <li>
+                                    <span class="unchecked mark"></span>
+                                    <span class="li-title">Interview John H.</span>
+                                    <span class="label recruiting"></span>    
+                                </li>
+                                <li>
+                                    <span class="checked mark"></span>
+                                    <span class="li-title">Summit update to mobile storefronts</span>
+                                    <span class="label mobile"></span>    
+                                </li>
+                                <li>
+                                    <span class="checked mark"></span>
+                                    <span class="title">Do the Toboolist</span>
+                                    <span class="label boolean"></span>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- upcoming -->
+                        <li class="upcoming">
+                            <span class="check-mark"></span>
+                            <h2 class="category-title">Upcoming</h2>
+                            <ul>
+                                <li>
+                                    <span class="unchecked mark"></span>
+                                    <span class="li-title">Schedule meeting with Alex</span>
+                                    <span class="no-label"></span>    
+                                </li>
+                                <li>
+                                    <span class="checked mark"></span>
+                                    <span class="li-title">Homepage refresh</span>
+                                    <span class="label website"></span>    
+                                </li>
+                                <li>
+                                    <span class="checked mark"></span>
+                                    <span class="li-title">Onboard new Sales team members</span>
+                                    <span class="label sales"></span>    
+                                </li>
+                                <li>
+                                    <span class="checked mark"></span>
+                                    <span class="li-title">Review editorial calendar</span>
+                                    <span class="label editorial"></span>    
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </main>
     </body>
 </html>

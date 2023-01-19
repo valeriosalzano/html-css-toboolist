@@ -8,82 +8,79 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: #37A7FA;
 }
+
+/* header */
 header{
     background-color: white;
-    padding: 10px;
 }
 
-header .container{
-    margin-left: 20px;
-    line-height: 50px;
+.header-container{
+    padding: 10px 20px; 
+}
+
+#logo-img{
     vertical-align: middle;
 }
-
-.logo{
-    line-height: 70px;
-    vertical-align: middle;
-}
-
 #logo-text{
-    font-weight: 900;
+    font-weight: bolder;
     font-size: 40px;
+    vertical-align: middle;
 }
 
+/* main */
 main .container{
-    margin: 50px 15%;
-    border-radius: 10px;
-    background-color: white;
+    margin: 50px 20%;
     color: #434851;
 }
 
-nav{
-    border-bottom: 3px solid #F6F8F9;
-    padding:10px 50px 10px;
+/* buttons */
+.buttons-container{
+    border-radius: 10px 10px 0 0;
+    background-color: white;
+    padding:10px 50px;
+    margin-bottom: 5px;
 }
-
 .button{
     margin: 5px;
-    padding:8px 16px;
+    padding:5px 15px;
     border: none;
     border-radius: 8px;
 }
-
 #add-task{
     background-color: #37A7FA;
 }
-
 #add-section{
     background-color: white;
     border: 1px solid lightgray;
 }
 
-.categories-container{
-    margin:30px 50px;
+/* checklist */
+.checklist-container{
+    background-color: white;
     padding-bottom:1px;
+    border-radius: 0 0 10px 10px;
+    padding:30px 50px;
 }
 
-.categories-container section{
-    margin-bottom:40px;
+.checklist-container ul{
+    list-style: none;
+}
+.checklist li{
+    margin: 10px 0;
 }
 
-.categories-title{
+.category-title{
+    display: inline-block;
     font-weight: bold;
     font-size: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0 10px;
 }
 
-.categories-title .check-mark::before{
+/* checkmark */
+.check-mark::before{
+    font-size: 18px;
     content: '\2714';
 }
-
-section .checklist{
-    margin-bottom:20px;
-}
-
-.list-element{
-    margin-bottom:10px;
-}
-
 .checklist .mark::before{
     display:inline-block;
     text-align: center;
@@ -98,17 +95,13 @@ section .checklist{
     color: #2BC0A6;
     border-color: #2BC0A6;
 }
-
 .unchecked.mark::before{
     content: '\2715';
     color: #FA2200;
     border-color: #FA2200;
 }
 
-.list-element .title{
-    margin-left: 5px;
-}
-
+/* label */
 .label::after{
     display: inline-block;
     padding:5px 10px;
@@ -116,7 +109,6 @@ section .checklist{
     font-size: 10px;
     color: white;
 }
-
 .label.editorial::after{
     content: 'Editorial';
     background-color: #32A4E6;
